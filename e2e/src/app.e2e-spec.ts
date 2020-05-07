@@ -9,6 +9,8 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angular-base-setup!');
+    expect(page.getTitleText()).toEqual(
+      'Welcome to creative-tim-paper-dashboard-2!'
+    );
   });
 });

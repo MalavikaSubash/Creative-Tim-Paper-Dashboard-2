@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-base-setup'`, () => {
+  it(`should have as title 'creative-tim-paper-dashboard-2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-base-setup');
+    expect(app.title).toEqual('creative-tim-paper-dashboard-2');
   });
 
   it('should render title in a h1 tag', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain(
-      'Welcome to angular-base-setup!'
+      'Welcome to creative-tim-paper-dashboard-2!'
     );
   });
 });

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-base-setup": {
+    "creative-tim-paper-dashboard-2": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-base-setup",
+            "outputPath": "dist/creative-tim-paper-dashboard-2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -104,24 +104,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-base-setup:build"
+            "browserTarget": "creative-tim-paper-dashboard-2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-base-setup:build:production"
+              "browserTarget": "creative-tim-paper-dashboard-2:build:production"
             },
             "uat": {
-              "browserTarget": "angular-base-setup:build:uat"
+              "browserTarget": "creative-tim-paper-dashboard-2:build:uat"
             },
             "qa": {
-              "browserTarget": "angular-base-setup:build:qa"
+              "browserTarget": "creative-tim-paper-dashboard-2:build:qa"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-base-setup:build"
+            "browserTarget": "creative-tim-paper-dashboard-2:build"
           }
         },
         "test": {
@@ -145,7 +145,7 @@
         }
       }
     },
-    "angular-base-setup-e2e": {
+    "creative-tim-paper-dashboard-2-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -154,17 +154,17 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-base-setup:serve"
+            "devServerTarget": "creative-tim-paper-dashboard-2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-base-setup:serve:production"
+              "devServerTarget": "creative-tim-paper-dashboard-2:serve:production"
             },
             "uat": {
-              "devServerTarget": "angular-base-setup:serve:uat"
+              "devServerTarget": "creative-tim-paper-dashboard-2:serve:uat"
             },
             "qa": {
-              "devServerTarget": "angular-base-setup:serve:qa"
+              "devServerTarget": "creative-tim-paper-dashboard-2:serve:qa"
             }
           }
         },
@@ -178,5 +178,5 @@
       }
     }
   },
-  "defaultProject": "angular-base-setup"
+  "defaultProject": "creative-tim-paper-dashboard-2"
 }
