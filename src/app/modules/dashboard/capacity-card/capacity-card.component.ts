@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./capacity-card.component.scss']
 })
 export class CapacityCardComponent implements OnInit {
+  Capacity = 10;
   constructor() {}
 
   ngOnInit() {}
