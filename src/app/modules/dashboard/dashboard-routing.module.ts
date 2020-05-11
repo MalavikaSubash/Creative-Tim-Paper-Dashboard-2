@@ -3,8 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
 import { AuthGuard } from '@app/core';
+import { PiechartComponent } from './piechart/piechart.component';
 
 const routes: Routes = [
+  {
+    path: 'piechart',
+    component: PiechartComponent
+  },
   {
     path: '',
     component: DashboardComponent,
