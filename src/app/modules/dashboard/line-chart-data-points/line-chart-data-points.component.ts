@@ -38,7 +38,14 @@ export class LineChartDataPointsComponent implements OnInit {
     responsive: true,
     scales: {
       xAxes: [{}],
-      yAxes: [{}]
+      yAxes: [
+        {
+          ticks: {
+            stepSize: 20
+          },
+          stacked: true
+        }
+      ]
     }
   };
 
