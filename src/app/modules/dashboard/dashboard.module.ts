@@ -11,6 +11,7 @@ import { RevenueCardComponent } from './revenue-card/revenue-card.component';
 import { FollowersCardComponent } from './followers-card/followers-card.component';
 import { LineChartDataPointsComponent } from './line-chart-data-points/line-chart-data-points.component';
 import { ErrorsCardComponent } from './errors-card/errors-card.component';
+import { UserBehaviourChartComponent } from './user-behaviour-chart/user-behaviour-chart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorsCardComponent } from './errors-card/errors-card.component';
     FollowersCardComponent,
     LineChartDataPointsComponent,
     PiechartComponent,
-    ErrorsCardComponent
+    ErrorsCardComponent,
+    UserBehaviourChartComponent
   ],
 
   imports: [CommonModule, DashboardRoutingModule, ChartsModule]
