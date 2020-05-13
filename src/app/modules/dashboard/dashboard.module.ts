@@ -10,6 +10,7 @@ import { CapacityCardComponent } from './capacity-card/capacity-card.component';
 import { RevenueCardComponent } from './revenue-card/revenue-card.component';
 import { FollowersCardComponent } from './followers-card/followers-card.component';
 import { LineChartDataPointsComponent } from './line-chart-data-points/line-chart-data-points.component';
+import { ErrorsCardComponent } from './errors-card/errors-card.component';
 import { UserBehaviourChartComponent } from './user-behaviour-chart/user-behaviour-chart.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { UserBehaviourChartComponent } from './user-behaviour-chart/user-behavio
     FollowersCardComponent,
     LineChartDataPointsComponent,
     PiechartComponent,
+    ErrorsCardComponent,
     UserBehaviourChartComponent
   ],
 
