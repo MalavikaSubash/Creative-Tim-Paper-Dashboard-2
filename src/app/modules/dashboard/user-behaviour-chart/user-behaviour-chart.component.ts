@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Label, Color, BaseChartDirective } from 'ng2-charts';
+import { ChartDataSets, ChartOptions } from 'chart.js';
 
 @Component({
-  selector: 'app-line-chart-data-points',
-  templateUrl: './line-chart-data-points.component.html',
-  styleUrls: ['./line-chart-data-points.component.scss']
+  selector: 'app-user-behaviour-chart',
+  templateUrl: './user-behaviour-chart.component.html',
+  styleUrls: ['./user-behaviour-chart.component.scss']
 })
-export class LineChartDataPointsComponent implements OnInit {
+export class UserBehaviourChartComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
     {
       data: [0, 8, 10, 13, 20, 25, 30, 35, 42, 44, 57, 63],
@@ -16,6 +16,10 @@ export class LineChartDataPointsComponent implements OnInit {
     {
       data: [0, 20, 18, 21, 30, 40, 38, 50, 22, 30, 50, 70],
       label: 'BMW 5 Series'
+    },
+    {
+      data: [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      label: 'Audi'
     }
   ];
 
@@ -41,9 +45,9 @@ export class LineChartDataPointsComponent implements OnInit {
       yAxes: [
         {
           ticks: {
-            stepSize: 20
-          },
-          stacked: true
+            suggestedMin: 10,
+            suggestedMax: 200
+          }
         }
       ]
     }
@@ -51,30 +55,28 @@ export class LineChartDataPointsComponent implements OnInit {
 
   public lineChartColors: Color[] = [
     {
-      // blue
-      backgroundColor: 'rgba(255, 255, 255,0.1)',
-      borderColor: 'rgba(27, 202, 255,1)',
-      pointBackgroundColor: 'rgba(27, 202, 255,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148, 0, 0,0.8)',
-      pointRadius: 6
+      // green
+      backgroundColor: 'rgba(114, 194, 114)',
+      borderColor: 'rgba(114, 194, 114)',
+      pointRadius: 0
+    },
+    {
+      // red
+      backgroundColor: 'rgba(255, 125, 19)',
+      borderColor: 'rgba(255, 125, 19)',
+      pointRadius: 0
     },
     {
       // yellow
-      backgroundColor: 'rgba(255, 255, 255,0.1)',
-      borderColor: 'rgba(255, 230, 0, 1)',
-      pointBackgroundColor: 'rgba(255, 217, 0,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(100, 100, 230,0.8)',
-      pointRadius: 6
+      backgroundColor: 'rgba(255, 207, 74)',
+      borderColor: 'rgba(255, 207, 74)',
+      pointRadius: 0
     }
   ];
 
   public lineChartLegend = false;
   public lineChartType = 'line';
-  // public lineChartPlugins = [pluginAnnotations];
+
   @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
 
   public randomize(): void {
@@ -88,26 +90,6 @@ export class LineChartDataPointsComponent implements OnInit {
 
   private generateNumber(i: number) {
     return Math.floor(Math.random() * (i < 2 ? 100 : 1000) + 1);
-  }
-
-  public chartClicked({
-    event,
-    active
-  }: {
-    event: MouseEvent;
-    active: {}[];
-  }): void {
-    // console.log(event, active);
-  }
-
-  public chartHovered({
-    event,
-    active
-  }: {
-    event: MouseEvent;
-    active: {}[];
-  }): void {
-    // console.log(event, active);
   }
 
   constructor() {}

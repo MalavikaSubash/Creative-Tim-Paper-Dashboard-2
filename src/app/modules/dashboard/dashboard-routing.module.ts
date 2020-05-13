@@ -3,19 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
 import { AuthGuard } from '@app/core';
-import { CapacityCardComponent } from './capacity-card/capacity-card.component';
-import { RevenueCardComponent } from './revenue-card/revenue-card.component';
 
 const routes: Routes = [
-  {
-    path: 'capacity-card',
-    component: CapacityCardComponent
-  },
-  {
-    path: 'revenue-card',
-    component: RevenueCardComponent
-  },
-
   {
     path: '',
     component: DashboardComponent,
