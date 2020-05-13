@@ -1,0 +1,24 @@
+<div class="card ">
+  <div class="card-header ">
+    <h5 class="card-title">Users Behavior</h5>
+    <p class="card-category">24 Hours performance</p>
+  </div>
+  <div class="card-body ">
+    <canvas
+      id="chartHours"
+      baseChart
+      width="75"
+      height="30"
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+    ></canvas>
+  </div>
+  <div class="card-footer ">
+    <hr />
+    <div class="stats"><i class="fa fa-history"></i> Updated 3 minutes ago</div>
+  </div>
+</div>
