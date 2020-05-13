@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./capacity-card.component.scss']
 })
 export class CapacityCardComponent implements OnInit {
-  Capacity = 10;
+  Capacity = 150;
   constructor() {}
 
+  update() {
+    this.Capacity = Math.floor(Math.random() * 1000 + 1);
+  }
   ngOnInit() {}
 }
