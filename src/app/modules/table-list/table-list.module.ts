@@ -4,11 +4,7 @@ import { TableListComponent } from './table-list.component';
 import { StripedListComponent } from './striped-list/striped-list.component';
 import { TableListRoutingModule } from './table-list-routing.module';
 @NgModule({
-  declarations: [
-    TableListComponent,
-    StripedListComponent,
-    TableListRoutingModule
-  ],
-  imports: [CommonModule]
+  declarations: [TableListComponent, StripedListComponent],
+  imports: [CommonModule, TableListRoutingModule]
 })
 export class TableListModule {}
