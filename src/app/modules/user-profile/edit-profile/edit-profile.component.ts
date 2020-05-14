@@ -8,5 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class EditProfileComponent implements OnInit {
   constructor() {}
 
+  updateProfile() {
+    alert('You have successfully updated your profile !');
+  }
+
   ngOnInit() {}
 }
