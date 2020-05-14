@@ -1,7 +1,33 @@
-<app-revenue-card></app-revenue-card>
-<app-capacity-card></app-capacity-card>
-<app-followers-card></app-followers-card>
-<app-user-behaviour-chart></app-user-behaviour-chart>
-<app-piechart></app-piechart>
-<app-errors-card></app-errors-card>
-<app-line-chart-data-points></app-line-chart-data-points>
+<div class="wrapper ">
+  <div class="main-panel">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <app-capacity-card></app-capacity-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <app-revenue-card></app-revenue-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <app-errors-card></app-errors-card>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <app-followers-card></app-followers-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <app-user-behaviour-chart></app-user-behaviour-chart>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <app-piechart></app-piechart>
+        </div>
+        <div class="col-md-8">
+          <app-line-chart-data-points></app-line-chart-data-points>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
