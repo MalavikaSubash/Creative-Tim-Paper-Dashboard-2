@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-team-members-card',
   templateUrl: './team-members-card.component.html',
