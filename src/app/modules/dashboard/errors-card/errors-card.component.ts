@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./errors-card.component.scss']
 })
 export class ErrorsCardComponent implements OnInit {
-  error = 10;
+  error = 23;
 
   errors() {
     this.error = Math.floor(Math.random() * 1000) + 1;
@@ -14,5 +14,7 @@ export class ErrorsCardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.errors();
+  }
 }
