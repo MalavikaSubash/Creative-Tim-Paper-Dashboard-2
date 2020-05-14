@@ -1,10 +1,8 @@
 <div class="col-md-8">
   <div class="card card-user">
-    <div class="card-header">
-      <h5 class="card-title">Edit Profile</h5>
-    </div>
+    <div class="card-header"><h5 class="card-title">Edit Profile</h5></div>
     <div class="card-body">
-      <form>
+      <form [formGroup]="myFormGroup" novalidate (ngSubmit)="onSubmit()">
         <div class="row">
           <div class="col-md-5 pr-1">
             <div class="form-group">
@@ -15,6 +13,7 @@
                 disabled=""
                 placeholder="Company"
                 value="Creative Code Inc."
+                formControlName="Company"
               />
             </div>
           </div>
@@ -26,13 +25,21 @@
                 class="form-control"
                 placeholder="Username"
                 value="michael23"
+                formControlName="Username"
+                required
               />
             </div>
           </div>
           <div class="col-md-4 pl-1">
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" placeholder="Email" />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                formControlName="Email"
+                required
+              />
             </div>
           </div>
         </div>
@@ -45,6 +52,8 @@
                 class="form-control"
                 placeholder="Company"
                 value="Chet"
+                formControlName="FirstName"
+                required
               />
             </div>
           </div>
@@ -56,6 +65,8 @@
                 class="form-control"
                 placeholder="Last Name"
                 value="Faker"
+                formControlName="LastName"
+                required
               />
             </div>
           </div>
@@ -69,6 +80,7 @@
                 class="form-control"
                 placeholder="Home Address"
                 value="Melbourne, Australia"
+                formControlName="Address"
               />
             </div>
           </div>
@@ -82,6 +94,7 @@
                 class="form-control"
                 placeholder="City"
                 value="Melbourne"
+                formControlName="City"
               />
             </div>
           </div>
@@ -93,6 +106,8 @@
                 class="form-control"
                 placeholder="Country"
                 value="Australia"
+                formControlName="Country"
+                required
               />
             </div>
           </div>
@@ -103,6 +118,7 @@
                 type="number"
                 class="form-control"
                 placeholder="ZIP Code"
+                formControlName="PostalCode"
               />
             </div>
           </div>
@@ -111,7 +127,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>About Me</label>
-              <textarea class="form-control textarea">
+              <textarea class="form-control textarea" formControlName="AboutMe">
 Oh so, your weak rhyme You doubt I'll bother, reading into it</textarea
               >
             </div>
