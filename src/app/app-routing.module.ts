@@ -24,6 +24,13 @@ const routes: Routes = [
           )
       },
       {
+        path: 'table-list',
+        loadChildren: () =>
+          import('./modules/table-list/table-list.module').then(
+            m => m.TableListModule
+          )
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'
