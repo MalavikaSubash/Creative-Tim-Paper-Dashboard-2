@@ -5,6 +5,7 @@ import { UserProfileRoutingModule } from './user-profile-routing.module';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { UserProfileComponent } from './user-profile.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,11 @@ import { ProfileDetailsComponent } from './profile-details/profile-details.compo
     UserProfileComponent,
     ProfileDetailsComponent
   ],
-  imports: [CommonModule, UserProfileRoutingModule]
+  imports: [
+    CommonModule,
+    UserProfileRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ]
 })
 export class UserProfileModule {}
