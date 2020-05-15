@@ -9,6 +9,7 @@ import { CoreModule } from '@app/core';
 
 import { AppComponent } from './app.component';
 import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
