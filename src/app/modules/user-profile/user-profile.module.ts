@@ -6,12 +6,14 @@ import { UserProfileComponent } from './user-profile.component';
 import { TeamMembersCardComponent } from './team-members-card/team-members-card.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
     UserProfileComponent,
     TeamMembersCardComponent,
-    ProfileDetailsComponent
+    ProfileDetailsComponent,
+    EditProfileComponent
   ],
 
   imports: [
