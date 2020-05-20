@@ -17,6 +17,20 @@ const routes: Routes = [
           )
       },
       {
+        path: 'user-profile',
+        loadChildren: () =>
+          import('./modules/user-profile/user-profile.module').then(
+            m => m.UserProfileModule
+          )
+      },
+      {
+        path: 'table-list',
+        loadChildren: () =>
+          import('./modules/table-list/table-list.module').then(
+            m => m.TableListModule
+          )
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'

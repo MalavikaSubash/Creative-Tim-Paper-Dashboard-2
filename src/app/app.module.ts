@@ -8,6 +8,7 @@ import { APP_CONFIG, AppConfig } from '@app/config';
 import { CoreModule } from '@app/core';
 
 import { AppComponent } from './app.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     CoreModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [
     {

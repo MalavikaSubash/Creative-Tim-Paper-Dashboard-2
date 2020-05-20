@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { DashboardComponent } from './dashboard.component';
 import { AuthGuard } from '@app/core';
-
+import { TableListComponent } from './table-list.component';
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent,
+    component: TableListComponent,
     canActivate: [AuthGuard]
   },
 
@@ -16,9 +14,9 @@ const routes: Routes = [
     redirectTo: ''
   }
 ];
-
 @NgModule({
+  declarations: [],
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule {}
+export class TableListRoutingModule {}
