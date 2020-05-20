@@ -17,14 +17,14 @@ const routes: Routes = [
           )
       },
       {
-        path: 'user-profile',
+        path: 'user',
         loadChildren: () =>
           import('./modules/user-profile/user-profile.module').then(
             m => m.UserProfileModule
           )
       },
       {
-        path: 'table-list',
+        path: 'table',
         loadChildren: () =>
           import('./modules/table-list/table-list.module').then(
             m => m.TableListModule
