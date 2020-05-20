@@ -72,7 +72,7 @@ export class LineChartDataPointsComponent implements OnInit {
     }
   ];
 
-  public lineChartLegend = true;
+  public lineChartLegend = false;
   public lineChartType = 'line';
   // public lineChartPlugins = [pluginAnnotations];
   @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
