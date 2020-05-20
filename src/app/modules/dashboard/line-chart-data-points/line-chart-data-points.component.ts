@@ -74,7 +74,6 @@ export class LineChartDataPointsComponent implements OnInit {
 
   public lineChartLegend = false;
   public lineChartType = 'line';
-  // public lineChartPlugins = [pluginAnnotations];
   @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
 
   public randomize(): void {
